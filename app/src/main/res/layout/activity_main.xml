@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/btnBuscar"
+        android:layout_toLeftOf="@+id/btnBuscar"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="75dp" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtContacto"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="Buscar"
+        android:text="buscar"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="176dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lstContactos"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtContacto"
+        android:layout_above="@+id/txtSMS" />
+
+    <EditText
+        android:id="@+id/txtSMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="escribe aquí el texto del mensaje"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="256dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
